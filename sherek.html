@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            height: 100vh;
+            margin: 0px;
+
+        }
+        .boneco{
+            position: absolute;
+            height: 93px;
+            top: 400px;
+            left: 570px;
+        }
+        .texto_rs{
+            display: none ;
+            background-color: yellow;
+            color: black;
+            width: 285px;
+            height: 205px; 
+            font-size: 18px;
+            position: absolute;
+            text-align: justify;
+            box-shadow: black 0px 1px 2px 1px;
+            top: 50px;
+            left: 20px;
+            padding: 10px;  
+        }
+        .texto_sc{
+            display: none ;
+            background-color: rgb(49, 250, 9);
+            color: black;
+            width: 285px;
+            height: 205px; 
+            font-size: 18px;
+            position: absolute;
+            text-align: justify;
+            box-shadow: black 0px 1px 2px 1px;
+            top: 50px;
+            left: 20px;
+            padding: 10px;  
+        }
+    </style>
+</head>
+<body>
+
+    <map name="meu_mapa">
+        <area onmouseleave="Esconder();" onmouseover="MostraTexto('RS');"shape="circle" coords="264,440,20" href="https://earth.google.com/web/@-30.10885441,-51.17715695,169.78607785a,80517.90544755d,35y,0h,0t,0r/data=Cj0aOxI1CiUweDk1MTk5Y2QyNTY2YWNiMWQ6MHg2MDMxMTFhODlmODdlOTFmKgxQb3J0byBBbGVncmUYAiABOgMKATA?authuser=0" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostraTexto('SC');"shape="circle" coords="290,410,20" href="https://earth.google.com/web/@-27.65543928,-51.08271856,649.93601674a,527680.21029287d,35y,360h,0t,0r/data=Cj8aPRI3CiUweDk0ZDk0ZDI1YzA1MmZmZjk6MHgyYjI3NzU4MGVkN2ZhYjJiKg5TQU5UQQpDQVRBUklOQRgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="278,382,20" href="https://earth.google.com/web/@-24.61677048,-51.32162281,667.72400744a,1083110.73757892d,35y,0h,0t,0r/data=CjgaNhIwCiUweDk0ZGIwYjk0MzBiODYyOWQ6MHhlODkzZmQ1MDYzY2VmMDYxKgdQQVJBTsOBGAIgAToDCgEw?authuser=0" target="_blank">
+        <area shape="circle" coords="313,480,20" href="https://earth.google.com/web/@-23.68241206,-46.59530108,756.42377272a,136351.93526422d,35y,0h,0t,0r/data=CjsaORIzCiUweDk0Y2U0NDgxODNhNDYxZDE6MHg5YmE5NGIwOGZmMzM1YmFlKgpTw6NvIFBhdWxvGAIgAToDCgEw?authuser=0" target="_blank">
+        <area shape="circle" coords="385,350,20" href="https://earth.google.com/web/@-22.0660686,-42.9236307,502.71353684a,551531.50423823d,35y,0h,0t,0r/data=CjwaOhI0CiIweDk4MTg5NGNhZTI4YWMzOjB4MzQ5YzMxYWMxMDU4M2QwKg5SSU8gREUKSkFORUlSTxgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="410,320,20" href="https://earth.google.com/web/@-19.59686325,-35.3637177,54.54488436a,2242606.00078394d,35y,0h,0t,0r/data=Cj4aPBI2CiMweGI3MDY5NTc5NjQ2MzU5OjB4NGUxYmQ1MjQzYzUwZjc5OSoPRVNQw41SSVRPClNBTlRPGAIgAToDCgEw?authuser=0" target="_blank">
+        <area shape="circle" coords="400,230,20" href="https://earth.google.com/web/@-13.4406904,-41.9592156,1408.73833913a,2315294.94683523d,35y,0h,0t,0r/data=CjUaMxItCiQweDcxNjAzN2NhMjNjYTViMzoweDdlOTI2ZjVmYjQ5MWVkMDUqBUJBSElBGAIgAToDCgEw?authuser=0" target="_blank">
+        <area shape="circle" coords="455,210,20" href="https://earth.google.com/web/@-10.54181286,-37.32048494,159.5230191a,292772.93053001d,35y,0h,0t,0r/data=CjcaNRIvCiQweDcwNWJkM2YxNjYwMTYyMToweGFjY2FjYTZiNjZmZWYxZDkqB1NFUkdJUEUYAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="465,200,20" href="https://earth.google.com/web/@-9.6567872,-36.6947409,259.23480742a,586690.80252918d,35y,0h,0t,0r/data=CjcaNRIvCiQweDcwMGZkMjMyZjUyMGQ5YjoweDdlMmQzOWU1N2YzZGY2MmQqB0FMQUdPQVMYAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="445,180,20" href="https://earth.google.com/web/@-6.64375985,-36.8682613,227.39681307a,1182254.21614535d,35y,0h,0t,0r/data=CjoaOBIyCiQweDcwMDdjOWQ5MzFjODZjNToweDFkZTAxOTZhOTM0MDE3MjYqClBFUk5BTUJVQ08YAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="470,170,20" href="https://earth.google.com/web/@-7.16443345,-36.77934485,523.25827968a,590477.00639287d,35y,0h,0t,0r/data=CjgaNhIwCiQweDdhNTRjYjZlZTk4YzhjZjoweDFmMjg5YjI0MzIzYzAxYjQqCFBBUkHDjUJBGAIgAToDCgEw?authuser=0" target="_blank">
+        <area shape="circle" coords="470,150,20" href="https://earth.google.com/web/@-5.899547,-36.77527625,94.28976666a,591971.55122679d,35y,0h,0t,0r/data=CkMaQRI7CiQweDdiMDRkZjU0OWU4ZWFhZDoweGE5MjUwOWFjMWM0ZDllYzQqE1JJTyBHUkFOREUKRE8gTk9SVEUYAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="430,140,20" href="https://earth.google.com/web/@-5.3212529,-39.33808825,298.51627783a,1185117.56279613d,35y,0h,0t,0r/data=CjYaNBIuCiQweDdiZGIzMTgyN2U2ODZjNToweDNiYjQzNWUwYWY5NTc4NDIqBkNFQVLDgRgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="390,170,20" href="https://earth.google.com/web/@-6.83889002,-43.19863825,210.76522881a,1183031.36359985d,35y,0h,0t,0r/data=CjYaNBIuCiQweDc4MmU1N2M3MDgwYjI4ZjoweDVhZTc3MTU0MDRmNjk0YTUqBlBJQVXDjRgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="360,140,20" href="https://earth.google.com/web/@-5.6555464,-45.27560985,169.73996268a,2368906.72050295d,35y,0h,0t,0r/data=CjkaNxIxCiQweDdlZGQ3N2E5YmNjMWNlNToweDYyNzZhYmEzZDk2YzI5MzQqCU1BUkFOSMODTxgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="270,130,20" href="https://earth.google.com/web/@-3.60699645,-52.4798766,157.06588493a,2375778.5519065d,35y,0h,0t,0r/data=CjYaNBIuCiUweDkyODhmOTk5YWMyYzA5OTc6MHgzMTVlYzgzZWU3NTVmMzBhKgVQQVLDgRgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="280,55,20" href="https://earth.google.com/web/@1.60318627,-52.37598365,178.27572799a,1190943.10125477d,35y,0h,0t,0r/data=CjcaNRIvCiUweDhkNjUzZDczY2Q5OTdiMjE6MHg5MTFhNjE0NTc2ZjZiY2Q0KgZBTUFQw4EYAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="160,45,20" href="https://earth.google.com/web/@1.8447073,-61.82390515,416.69599701a,1189630.24208492d,35y,0h,0t,0r/data=CjgaNhIwCiUweDhkOTMwNjcxZGZjY2Y0NWI6MHg2OTVmMDBmMjllOWM3YTE0KgdST1JBSU1BGAIgAToDCgEw?authuser=0" target="_blank">
+        <area shape="circle" coords="120,120,20" href="https://earth.google.com/web/@-3.79146425,-64.9452341,79.17361237a,2377966.55330685d,35y,0h,0t,0r/data=CjkaNxIxCiUweDkyMTgzZjVjOGIxZDZlZDE6MHgxNzZkNmFmNjZiM2MyZWZhKghBTUFaT05BUxgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="50,190,20" href="https://earth.google.com/web/@-9.13022026,-70.30303712,230.65275022a,1176172.58099146d,35y,0h,0t,0r/data=CjUaMxItCiUweDkxN2Y4ZGFhNGU5MTA2Yjk6MHgyNWVjMGFjNTA4MzYwN2MxKgRBQ1JFGAIgAToDCgEw?authuser=0" target="_blank">
+        <area shape="circle" coords="140,200,20" href="https://earth.google.com/web/@-10.83478415,-63.2923053,254.21499911a,1169028.92683203d,35y,0h,0t,0r/data=CjoaOBIyCiUweDkyMzI1Y2Q5NmY1MTZiNTc6MHg3MzM3NjNkNTM0MDYyMWRkKglST05Ew5ROSUEYAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="230,230,20" href="https://earth.google.com/web/@-12.69531325,-55.92909465,395.08194901a,2322297.1087808d,35y,0h,0t,0r/data=CjwaOhI0CiUweDkzOWRiMWU3NDgzNzAzMTk6MHhjNjYyNjhlMjdkMjE4MWZiKgtNQVRPIEdST1NTTxgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="300,275,20" href="https://earth.google.com/web/@-16.69587573,-49.30426748,780.57037471a,89135.70127684d,35y,0h,0t,0r/data=CjkaNxIxCiUweDkzNWVmNmJkNThkODA4Njc6MHhlZjY5MmJhZDIwZDI2NzhlKghHb2nDom5pYRgCIAE6AwoBMA?authuser=0" target="_blank">
+        <area shape="circle" coords="315,200,20" href="https://earth.google.com/web/@-9.31827765,-48.22066435,304.97082097a,1174540.7264382d,35y,0h,0t,0r/data=CjoaOBIyCiUweDkzMjM1MDFmNTJiMTM5OTc6MHhlM2Q0ODY2MjQ1Y2MzOTZjKglUT0NBTlRJTlMYAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="240,340,20" href="https://earth.google.com/web/@-20.6170563,-54.5457105,560.77344857a,1114017.42510722d,35y,0h,0t,0r/data=CkMaQRI7CiUweDk0N2U5MWRiZTI5ZjczODM6MHgzNTFjZDhlOTY5NTQxMGFjKhJNQVRPIEdST1NTTwpETyBTVUwYAiABOgMKATA?authuser=0" target="_blank">
+        <area shape="circle" coords="325,265,20" href="https://earth.google.com/web/@-15.72176215,-47.93735785,1039.9423382a,89509.2683898d,35y,0h,0t,0r/data=CjoaOBIyCiUweDkzNWEzZDE4ZGY5YWUyNzU6MHg3Mzg0NzBlNDY5NzU0YTI0KglCcmFzw61saWEYAiABOgMKATA?authuser=0" target="_blank">
+    </map>
+
+
+    <img src="mapa_brasil.jpg" id="mapa" usemap="#meu_mapa">
+    <img src="boneco.gif" class="boneco" id="boneco">
+    <div class="texto_rs" id="texto_rs"> Rio Grande do Sul é o estado mais a sul do Brasil e faz fronteira com a Argentina e o Uruguai. A nordeste, a montanhosa Serra Gaúcha alberga a região vinícola do Vale dos Vinhedos e inclui cidades turísticas de estilo alemão como Gramado e Canela, famosas pelas paisagens naturais pitorescas.</div>
+    <div class="texto_sc" id="texto_sc"> Santa Catarina é um estado na região sul do Brasil. Com uma longa costa com o Atlântico e muitas ilhas, ela é conhecida por suas praias e montanhas. Florianópolis, a capital, tem um mercado público tradicional com bares, restaurantes e barracas de comida, além de um museu histórico instalado em um palácio do governo colonial do século 19.</div>
+</body>
+<script>
+    function Esconder()
+    {
+        texto_rs.style.display = "none";
+        texto_sc.style.display = "none";
+    }
+    function MostraTexto(estado)
+    {
+        if(estado == "RS")
+        {
+            texto_rs.style.display = "block";
+        }
+        if(estado == "SC")
+        {
+            texto_sc.style.display = "block";
+        }
+    }
+</script>
+</html>
